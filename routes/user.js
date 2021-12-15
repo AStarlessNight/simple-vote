@@ -211,7 +211,7 @@ router.route("/forgot-password")
 
         let randomLink = Math.random().toString(36).slice(2) + Math.random().toString(36).slice(2)
         pwdMap[randomLink] = info.name
-        let link = `http://localhost:3000/forgot-changepwd?link=` + randomLink
+        let link = `https://starless.top/forgot-changepwd?link=` + randomLink
 
         setTimeout(() => {
             delete pwdMap[randomLink]
