@@ -1,3 +1,6 @@
+vote.db
+/static/img/uploads
+
 # Logs
 logs
 *.log
