@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://AStarlessNight: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@github.com/AStarlessNight/vote.git"
+    "url": "git+https://github.com/AStarlessNight/simple-vote.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AStarlessNight/vote/issues"
+    "url": "https://github.com/AStarlessNight/simple-vote/issues"
   },
-  "homepage": "https://github.com/AStarlessNight/vote#readme",
+  "homepage": "https://github.com/AStarlessNight/simple-vote#readme",
   "dependencies": {
     "cookie-parser": "^1.4.6",
     "express": "^4.17.1",
