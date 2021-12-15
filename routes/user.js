@@ -113,6 +113,12 @@ router.route("/register")
                     `select * from users where rowid = ?`,
                     lastID)
                 delete newUser.password
+                if (!req.curUser) {
+                    res.cookie("user", newUser.name, {
+                        maxAge: 86400000,
+                        signed: true,
+                    })
+                }
                 res.status(200).json({
                     code: 0,
                     msg: "注册成功",
