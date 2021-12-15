@@ -28,5 +28,6 @@
     "sqlite3": "^5.0.2",
     "svg-captcha": "^1.4.0",
     "ws": "^8.3.0"
-  }
+  },
+  "devDependencies": {}
 }
