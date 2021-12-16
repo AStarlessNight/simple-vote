@@ -1,6 +1,5 @@
 vote.db
-/static/img/uploads/#
-
+/static/img/uploads/
 # Logs
 logs
 *.log

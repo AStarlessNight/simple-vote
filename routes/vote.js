@@ -89,8 +89,8 @@ router.post("/myvote", async (req, res, next) => {
             code: 0,
             msg: "投票列表获取成功",
             voteList: {
-                create: createVoteList.map(it => it.anonymous === 1 ? { ...it, name: "", avatar: "/uploads/default.jpg" } : it),
-                participate: participateVoteList.map(it => it.anonymous === 1 ? { ...it, name: "", avatar: "/uploads/default.jpg" } : it),
+                create: createVoteList.map(it => it.anonymous === 1 ? { ...it, name: "", avatar: "/uploads/default.png" } : it),
+                participate: participateVoteList.map(it => it.anonymous === 1 ? { ...it, name: "", avatar: "/uploads/default.png" } : it),
             },
         }).end()
     }
