@@ -12,7 +12,6 @@ router.get("/captcha", (req, res, next) => {
         ignoreChars: "0oO1ilI",
         noise: 1,
     });
-    console.log(captcha.text)
     req.session.captcha = new RegExp(`^${captcha.text}$`, "i")
     setTimeout(() => {
         delete req.session.captcha

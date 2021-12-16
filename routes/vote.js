@@ -8,7 +8,6 @@ const voteIdMapWs = {}
 const wss = new WebSocket.Server({ server: httpsServer })
 
 wss.on('connection', async (ws, req) => {
-    console.log("asjdhsd")
     let voteId = req.url.split('/').slice(-1)[0]
     let voteInfo = await db.get('SELECT * FROM votes WHERE rowid = ?', voteId)
     if ((!voteInfo) || Date.now() > new Date(voteInfo.deadline).getTime()) {
