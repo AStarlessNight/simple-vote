@@ -1,4 +1,4 @@
-# SimpleVote — A live-updating voting platform.
+# [SimpleVote](https://starless.top) — A live-updating voting platform.
 
 [SimpleVote](https://starless.top)是一个基于React + React Router + Ant Design + Express构建的实时更新的投票系统
 
@@ -22,7 +22,7 @@ websocket实现，对问题的投票，能够实时更新到每一个正在浏�
 ## Installation
 SimpleVote 可通过如下命令实现自建
 ```sh
-git clone https://github.com/AStarlessNight/simple-vote.git
+git clone -b self-host https://github.com/AStarlessNight/simple-vote.git
 
 cd simple-vote
 
