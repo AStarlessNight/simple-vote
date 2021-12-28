@@ -21,8 +21,13 @@ wss.on('connection', async (ws, req) => {
     }
     let id = Math.random().toString(16).slice(2)
     ws.on('message', (data) => {
-        ws.send(JSON.stringify({ id }))
-        ws.id = id
+        const msg = data.toString()
+        if (msg === "hello") {
+            ws.send(JSON.stringify({ id }))
+            ws.id = id
+        } else if(msg === "Ping") {
+            ws.send("Pong")
+        }
     })
 
     ws.on('close', () => {
